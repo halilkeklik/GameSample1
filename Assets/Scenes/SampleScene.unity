@@ -470,6 +470,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  dashingPower: 24
+  dashingTime: 0.2
+  dashingCooldown: 1
 --- !u!50 &1106723613
 Rigidbody2D:
   serializedVersion: 4
