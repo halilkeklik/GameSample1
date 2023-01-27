@@ -464,12 +464,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  jumpingPower: 16
+  jumpingPower: 15.5
   rb: {fileID: 1106723613}
   groundCheck: {fileID: 1105849694}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  coyoteTime: 0.15
+  jumpBufferTime: 0.15
   dashingPower: 24
   dashingTime: 0.2
   dashingCooldown: 1
