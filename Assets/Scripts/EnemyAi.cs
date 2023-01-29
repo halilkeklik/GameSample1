@@ -39,7 +39,7 @@ public class EnemyAi : MonoBehaviour
         
         Vector2 current = new Vector2(transform.position.x, transform.position.y);
         Vector2 target = new Vector2(player.transform.position.x, transform.position.y);
-        if (distance.x < 7 && -1 < distance.y && distance.y < 1) 
+        if (distance.x < 7 && -4 < distance.y && distance.y < 4) 
         {
             transform.position = Vector2.MoveTowards(current, target, moveSpeed * Time.deltaTime);
         }
