@@ -21,6 +21,7 @@ public class EnemyAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Physics2D.IgnoreLayerCollision(6,6);
         baseScale = transform.localScale;
         facingDirection = RIGHT;
         rb2d = GetComponent<Rigidbody2D>();
