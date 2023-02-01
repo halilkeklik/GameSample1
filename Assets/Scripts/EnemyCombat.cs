@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
 {
-    [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] private Health playerHealth;
     [SerializeField] private int damage;
     
     private void OnCollisionEnter2D(Collision2D col)
