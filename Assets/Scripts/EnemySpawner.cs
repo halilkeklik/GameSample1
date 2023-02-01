@@ -1,17 +1,30 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject boss;
     [SerializeField] private List<GameObject> swapnPoints;
-
+    private GameObject[] gameObjects;
     // Start is called before the first frame update
     void Start()
     {
         Spawn();
     }
+
+    void Update()
+    {
+        gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+        if (gameObjects.Length <= 0)
+        {
+            boss.SetActive(true);
+        }
+    }
+
     void Spawn()
     {
         foreach (GameObject swapnPoint in swapnPoints)
