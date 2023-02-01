@@ -95,12 +95,14 @@ public class PlayerMovement : MonoBehaviour
         canDash = false;
         isDashing = true;
         float orginalGravity = rb.gravityScale;
+        Physics2D.IgnoreLayerCollision(7, 6);
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         yield return new WaitForSeconds(dashingTime);
         
         rb.gravityScale = orginalGravity;
         isDashing = false;
+        Physics2D.IgnoreLayerCollision(7, 6,false);
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
