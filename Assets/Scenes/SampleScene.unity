@@ -301,6 +301,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8527465938083564334, guid: f4862b2b238b439488da0c002943a43d, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4862b2b238b439488da0c002943a43d, type: 3}
 --- !u!1 &253555715
@@ -574,6 +578,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8527465938083564332, guid: f4862b2b238b439488da0c002943a43d, type: 3}
   m_PrefabInstance: {fileID: 193302503}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &588338278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588338268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146b0e650bc38d74b953f1c88307b8b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 20
 --- !u!1001 &592041906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -640,6 +658,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5442776825401478127, guid: 559949e72edc5074e8731b12df07fe9e, type: 3}
   m_PrefabInstance: {fileID: 592041906}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &667112428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667112422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04cd338c4f9c6c408df4f157796aa19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 588338278}
+  damage: 1
 --- !u!1 &860477961
 GameObject:
   m_ObjectHideFlags: 0
