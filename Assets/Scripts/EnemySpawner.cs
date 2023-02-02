@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
         gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
         if (gameObjects.Length <= 0)
         {
-            boss.SetActive(true);
+            BossAppear();
         }
     }
 
@@ -47,5 +47,19 @@ public class EnemySpawner : MonoBehaviour
                 }
             }
         }
+    }
+
+    void BossAppear()
+    {
+        boss.SetActive(true);
+
+        foreach (GameObject swapnPoint in swapnPoints)
+        {
+            if (!swapnPoint.CompareTag("Ground"))
+            {
+                Destroy(swapnPoint.gameObject);
+            }
+        }
+        
     }
 }

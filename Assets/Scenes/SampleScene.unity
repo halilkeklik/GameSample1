@@ -880,7 +880,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 667112422}
   boss: {fileID: 1688118756}
-  swapnPoints: []
+  swapnPoints:
+  - {fileID: 1333021150}
+  - {fileID: 1797902027}
+  - {fileID: 967225812}
+  - {fileID: 860477961}
+  - {fileID: 253555715}
+  - {fileID: 1178112466}
 --- !u!1 &588338268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8527465938083564334, guid: f4862b2b238b439488da0c002943a43d, type: 3}
@@ -1604,7 +1610,7 @@ GameObject:
   - component: {fileID: 1333021153}
   m_Layer: 3
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
