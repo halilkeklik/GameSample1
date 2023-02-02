@@ -790,7 +790,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -941,7 +941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7622475936078698853, guid: 559949e72edc5074e8731b12df07fe9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7622475936078698853, guid: 559949e72edc5074e8731b12df07fe9e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1814,6 +1814,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8122505307642099562, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
   m_PrefabInstance: {fileID: 62485125}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1688118760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688118756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f356dae20f692ed40a22aefcfca838e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateSpeed: 1
+  Radius: 10
 --- !u!1 &1797902027
 GameObject:
   m_ObjectHideFlags: 0
