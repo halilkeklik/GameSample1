@@ -327,7 +327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8527465938083564332, guid: f4862b2b238b439488da0c002943a43d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.44
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 8527465938083564332, guid: f4862b2b238b439488da0c002943a43d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -493,7 +493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &253555716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -807,13 +807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 667112422}
   boss: {fileID: 1688118756}
-  swapnPoints:
-  - {fileID: 1333021150}
-  - {fileID: 1797902027}
-  - {fileID: 967225812}
-  - {fileID: 860477961}
-  - {fileID: 253555715}
-  - {fileID: 1178112466}
+  swapnPoints: []
 --- !u!1 &588338268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8527465938083564334, guid: f4862b2b238b439488da0c002943a43d, type: 3}
@@ -836,7 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146b0e650bc38d74b953f1c88307b8b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 20
   maxHealth: 20
   healthBar: {fileID: 747974931}
 --- !u!1001 &592041906
@@ -921,7 +915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04cd338c4f9c6c408df4f157796aa19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 588338278}
   damage: 1
 --- !u!4 &667112433 stripped
 Transform:
@@ -940,7 +933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146b0e650bc38d74b953f1c88307b8b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 5
   maxHealth: 5
   healthBar: {fileID: 486358785}
 --- !u!1 &747974929
@@ -1036,7 +1029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &860477962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1147,7 +1140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &967225813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1430,7 +1423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1178112467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1741,6 +1734,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2509972603182804597, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
   m_PrefabInstance: {fileID: 2509972602705070993}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1688118761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2509972603182804600, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
+  m_PrefabInstance: {fileID: 2509972602705070993}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688118756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146b0e650bc38d74b953f1c88307b8b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &1688118762
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1774,7 +1778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1797902028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2051,13 +2055,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2509972603182804600, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
+      propertyPath: health
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509972603182804600, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
       propertyPath: maxHealth
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2509972603182804601, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 4443404457036870232, guid: 7aaf42ed025bc0a4d9c75b9848553a52, type: 3}
+    - target: {fileID: 2509972603182804601, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1688118761}
+    - target: {fileID: 2509972603182804601, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 588338273}
+    - target: {fileID: 2509972603182804601, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
+      propertyPath: spawnTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509972603182804601, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
+      propertyPath: spawnDelay
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2032697223483692006, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
