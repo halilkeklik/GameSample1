@@ -18,6 +18,11 @@ public class BossManager : MonoBehaviour
     private bool isRange;
     [SerializeField] private float startTimeBtwShoots;
     private float timeBtwShoots;
+    //BigProjectile
+    [SerializeField] private GameObject bigProjectile;
+    [SerializeField] private float bStartTimeBtwShoots;
+    private float bTimeBtwShoots;
+    [SerializeField] private Health health;
     
     private void Start()
     {
@@ -28,6 +33,10 @@ public class BossManager : MonoBehaviour
     {
         Move();
         Projectile();
+        if (health.health <= health.maxHealth / 2)
+        {
+            BigProjectile();
+        }
     }
 
     void Move()
@@ -54,6 +63,26 @@ public class BossManager : MonoBehaviour
             else
             {
                 timeBtwShoots -= Time.deltaTime;
+            }
+        }
+    }
+
+    void BigProjectile()
+    {
+        Vector3 difference = player.position - gun.transform.position;
+        float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        gun.transform.rotation = Quaternion.Euler(0f, 0f, rotZ-90f);
+
+        if (Vector2.Distance(transform.position, player.position) <= attackRange)
+        {
+            if (bTimeBtwShoots <= 0)
+            {
+                Instantiate(bigProjectile, shotPoint.position, shotPoint.transform.rotation);
+                bTimeBtwShoots = bStartTimeBtwShoots;
+            }
+            else
+            {
+                bTimeBtwShoots -= Time.deltaTime;
             }
         }
     }

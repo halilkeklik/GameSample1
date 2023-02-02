@@ -493,7 +493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &253555716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -807,7 +807,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 667112422}
   boss: {fileID: 1688118756}
-  swapnPoints: []
+  swapnPoints:
+  - {fileID: 1333021150}
+  - {fileID: 1797902027}
+  - {fileID: 967225812}
+  - {fileID: 860477961}
+  - {fileID: 253555715}
+  - {fileID: 1178112466}
 --- !u!1 &588338268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8527465938083564334, guid: f4862b2b238b439488da0c002943a43d, type: 3}
@@ -1029,7 +1035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &860477962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1140,7 +1146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &967225813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1423,7 +1429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1178112467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1778,7 +1784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1797902028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2056,7 +2062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2509972603182804600, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
       propertyPath: health
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2509972603182804600, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
       propertyPath: maxHealth
@@ -2081,6 +2087,14 @@ PrefabInstance:
     - target: {fileID: 2509972603182804601, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
       propertyPath: spawnDelay
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509972603182804601, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
+      propertyPath: bigProjectile
+      value: 
+      objectReference: {fileID: 1538261292586556019, guid: e62e3eee5e6742d4dbef05dea14700c0, type: 3}
+    - target: {fileID: 2509972603182804601, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
+      propertyPath: bStartTimeBtwShoots
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2032697223483692006, guid: 14daa02e6d1136e4bb413b779c1a03ca, type: 3}
