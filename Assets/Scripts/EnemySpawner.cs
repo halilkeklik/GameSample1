@@ -41,7 +41,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 for (int i = 0; i <= swapnPoint.transform.localScale.x / 10; i++)
                 {
-                    float randx = Random.Range(-randRange, randRange);
+                    float randx = Random.Range(-8f , randRange);
                     Vector2 whereToSpawn2 = new Vector2(randx, swapnPoint.transform.position.y + 0.3f);
                     Instantiate(enemy, whereToSpawn2, Quaternion.identity);
                 }
